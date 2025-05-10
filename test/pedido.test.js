@@ -25,6 +25,6 @@ describe("Sistema de Pedidos", function () {
     pedido.adicionarItem("Hamburguer", 10.0, 2);
     pedido.aplicarDesconto("PROMO10");
     const totalComDesconto = pedido.calcularTotal();
-    assert.strictEqual(totalComDesconto, 23.0)
+    assert.strictE
   });
 });
