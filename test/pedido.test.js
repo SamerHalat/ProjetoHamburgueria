@@ -22,9 +22,9 @@ describe("Sistema de Pedidos", function () {
     // (10.5 * 2) + (5.0 * 1) + 5.0 (taxa de entrega)
   });
   it ("deve aplicar desconto ao pedido", function (){
-    pedido.adicionarItem("Hamburguer", 10.0, 2);
+    pedido.adicionarItem("Hamburguer", 1000000.0, 2);
     pedido.aplicarDesconto("PROMO10");
     const totalComDesconto = pedido.calcularTotal();
-    assert.strictE
+    assert.strictEqual(totalComDesconto, 200003.0)
   });
 });
